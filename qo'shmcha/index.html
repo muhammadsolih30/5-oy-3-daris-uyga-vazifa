@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>MS Rise 🌌🪐</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+   <link rel="stylesheet" href="./satayle.css">
+</head>
+
+<body class="bg-[#0c0d12] text-[#e0e7ff] relative">
+   <canvas id="bg-canvas"></canvas>
+   <main class="container mx-auto px-6 md:px-12 relative z-10">
+      <section id="hero" class="content-section min-h-screen flex flex-col justify-center items-center text-center">
+         <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-[#7c3aed] mb-4 tracking-tight fade-in">
+            DASTO'RCHILAR Portali
+         </h1>
+         <p class="text-lg sm:text-xl text-[#a5b4fc] max-w-3xl mx-auto mb-8 fade-in" style="animation-delay: 0.2s;">
+            Maktab davri unutilmas xotiralar... Ushbu sayt barchamizni birlashtirishga xizmat qiladi.
+         </p>
+         <a href="#profiles"
+            class="px-8 py-3 bg-[#4c1d95] text-white font-semibold rounded-full shadow-lg hover:bg-[#5b21b6] transition-all duration-300 transform hover:scale-105 fade-in"
+            style="animation-delay: 0.4s;">
+            Boshlash
+         </a>
+      </section>
+      <section id="profiles" class="content-section py-20 fade-in" style="animation-delay: 0.6s;">
+         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-16 text-[#e0e7ff]">
+            A'lochi va faol sinfdoshlar
+         </h2>
+         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 md:gap-12">
+            <div class="profile-card p-6 rounded-3xl text-center">
+               <div
+                  class="rounded-full overflow-hidden w-36 h-36 mx-auto mb-4 border-4 border-[#7c3aed] transform hover:scale-110 transition-transform duration-500">
+                  <img src="https://placehold.co/200x200/4c1d95/e0e7ff?text=Shirin" alt="Shirin"
+                     class="w-full h-full object-cover">
+               </div>
+               <h3 class="text-xl font-bold text-[#e0e7ff]">Shirin</h3>
+               <p class="text-sm text-[#a5b4fc]">Matematika a'lochisi</p>
+               <div class="overlay rounded-3xl">
+                  <span class="text-white text-lg font-semibold">Tanishish</span>
+               </div>
+            </div>
+            <div class="profile-card p-6 rounded-3xl text-center">
+               <div
+                  class="rounded-full overflow-hidden w-36 h-36 mx-auto mb-4 border-4 border-[#7c3aed] transform hover:scale-110 transition-transform duration-500">
+                  <img src="https://placehold.co/200x200/4c1d95/e0e7ff?text=Davron" alt="Davron"
+                     class="w-full h-full object-cover">
+               </div>
+               <h3 class="text-xl font-bold text-[#e0e7ff]">Davron</h3>
+               <p class="text-sm text-[#a5b4fc]">Jamoat faoli</p>
+               <div class="overlay rounded-3xl">
+                  <span class="text-white text-lg font-semibold">Tanishish</span>
+               </div>
+            </div>
+            <div class="profile-card p-6 rounded-3xl text-center">
+               <div
+                  class="rounded-full overflow-hidden w-36 h-36 mx-auto mb-4 border-4 border-[#7c3aed] transform hover:scale-110 transition-transform duration-500">
+                  <img src="https://placehold.co/200x200/4c1d95/e0e7ff?text=Sevara" alt="Sevara"
+                     class="w-full h-full object-cover">
+               </div>
+               <h3 class="text-xl font-bold text-[#e0e7ff]">Sevara</h3>
+               <p class="text-sm text-[#a5b4fc]">Dasturchi</p>
+               <div class="overlay rounded-3xl">
+                  <span class="text-white text-lg font-semibold">Tanishish</span>
+               </div>
+            </div>
+            <div class="profile-card p-6 rounded-3xl text-center">
+               <div
+                  class="rounded-full overflow-hidden w-36 h-36 mx-auto mb-4 border-4 border-[#7c3aed] transform hover:scale-110 transition-transform duration-500">
+                  <img src="https://placehold.co/200x200/4c1d95/e0e7ff?text=Javohir" alt="Javohir"
+                     class="w-full h-full object-cover">
+               </div>
+               <h3 class="text-xl font-bold text-[#e0e7ff]">Javohir</h3>
+               <p class="text-sm text-[#a5b4fc]">Sportchi</p>
+               <div class="overlay rounded-3xl">
+                  <span class="text-white text-lg font-semibold">Tanishish</span>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="dragon-section" class="content-section py-20 min-h-screen flex items-center justify-center">
+         <div class="text-center max-w-2xl mx-auto">
+            <h2 id="dragon-title" class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#e0e7ff] mb-6">
+               Mening sinfdoshlarim haqida
+            </h2>
+            <p id="dragon-text" class="text-lg sm:text-xl text-[#a5b4fc] mb-8">
+               Bu bo'limda siz sinfdoshlaringizning qiziqarli ma'lumotlarini o'qishingiz mumkin. Ajdahoning diqqatini
+               tortmang!
+            </p>
+         </div>
+      </section>
+      <section id="solar-system" class="content-section py-20 min-h-screen flex items-center justify-center">
+         <div class="text-center max-w-2xl mx-auto">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#e0e7ff] mb-6">
+               Sayyoralar haqida ma'lumot
+            </h2>
+            <p class="text-lg sm:text-xl text-[#a5b4fc] mb-8">
+               Kosmik kemamiz sayyoralar tizimiga yetib keldi. Quyosh atrofida aylanayotgan sayyoralarni ko'zdan
+               kechiring.
+            </p>
+         </div>
+      </section>
+      <section id="contact" class="content-section py-20 fade-in" style="animation-delay: 0.8s;">
+         <div class="max-w-xl mx-auto text-center p-8 bg-gray-900 rounded-3xl">
+            <h2 class="text-3xl font-bold text-[#e0e7ff] mb-6">Aloqa</h2>
+            <p class="text-gray-400 mb-8">Biz bilan bog'lanish uchun quyidagi shaklni to'ldiring.</p>
+            <form class="space-y-6">
+               <div>
+                  <input type="text" placeholder="Ismingiz"
+                     class="w-full p-4 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+               </div>
+               <div>
+                  <input type="email" placeholder="Elektron pochtangiz"
+                     class="w-full p-4 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+               </div>
+               <div>
+                  <textarea placeholder="Xabaringiz" rows="4"
+                     class="w-full p-4 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+               </div>
+               <button type="submit"
+                  class="w-full py-4 bg-[#7c3aed] text-white font-semibold rounded-lg hover:bg-[#9359f1] transition-colors duration-300">Yuborish</button>
+            </form>
+         </div>
+      </section>
+      <section id="login" class="content-section py-20 fade-in" style="animation-delay: 1.0s;">
+         <div class="max-w-sm mx-auto text-center p-8 bg-gray-900 rounded-3xl">
+            <h2 class="text-3xl font-bold text-[#e0e7ff] mb-6">Login</h2>
+            <form class="space-y-6">
+               <div>
+                  <input type="text" placeholder="Foydalanuvchi nomi"
+                     class="w-full p-4 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+               </div>
+               <div>
+                  <input type="password" placeholder="Parol"
+                     class="w-full p-4 rounded-lg bg-gray-800 text-white border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+               </div>
+               <button type="submit"
+                  class="w-full py-4 bg-[#4c1d95] text-white font-semibold rounded-lg hover:bg-[#5b21b6] transition-colors duration-300">Kirish</button>
+            </form>
+         </div>
+      </section>
+      <footer class="text-center py-10 border-t border-gray-700 mt-16 text-sm text-[#a5b4fc] content-section">
+         <p>Sinfdoshlar Portali - 2024. Barcha huquqlar himoyalangan.</p>
+      </footer>
+
+   </main>
+
+   <script>
+      window.onload = function () {
+         const canvas = document.getElementById('bg-canvas');
+         const scene = new THREE.Scene();
+         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+         const renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true });
+
+         renderer.setSize(window.innerWidth, window.innerHeight);
+         renderer.setPixelRatio(window.devicePixelRatio);
+         renderer.setClearColor(0x0c0d12, 1);
+         let isSolarSystemMode = false;
+         let flightProgress = 0;
+         const FLIGHT_SPEED = 0.0001;
+         const starGeometry = new THREE.BufferGeometry();
+         const starCount = 10000;
+         const starPositions = new Float32Array(starCount * 3);
+         for (let i = 0; i < starCount * 3; i++) {
+            starPositions[i] = (Math.random() - 0.5) * 4000;
+         }
+         starGeometry.setAttribute('position', new THREE.BufferAttribute(starPositions, 3));
+         const starMaterial = new THREE.PointsMaterial({ color: 0xffffff, size: 0.5 });
+         const stars = new THREE.Points(starGeometry, starMaterial);
+         scene.add(stars);
+
+
+         const rings = [];
+         const ringCount = 10;
+         const ringColors = [0x5b21b6, 0x7c3aed, 0xa5b4fc, 0x4c1d95, 0xc4b5fd];
+         for (let i = 0; i < ringCount; i++) {
+            const geometry = new THREE.TorusGeometry(20, 0.2, 16, 100);
+            const material = new THREE.MeshBasicMaterial({ color: ringColors[i % ringColors.length], transparent: true, opacity: 0.7 });
+            const ring = new THREE.Mesh(geometry, material);
+            ring.position.set(
+               (Math.random() - 0.5) * 50,
+               (Math.random() - 0.5) * 50,
+               (Math.random() - 0.5) * 50 - 50
+            );
+            ring.rotation.set(Math.random() * Math.PI, Math.random() * Math.PI, Math.random() * Math.PI);
+            rings.push(ring);
+            scene.add(ring);
+         }
+
+
+         const planets = [];
+         const planetData = [
+            { name: "Merkuriy", size: 5, color: 0x98a2a7, distance: 100, orbitSpeed: 0.0005 },
+            { name: "Venera", size: 7, color: 0xffc84a, distance: 150, orbitSpeed: 0.0004 },
+            { name: "Yer", size: 8, color: 0x00aaff, distance: 200, orbitSpeed: 0.0003 },
+            { name: "Mars", size: 6, color: 0xff4500, distance: 250, orbitSpeed: 0.00025 },
+            { name: "Yupiter", size: 20, color: 0xff9966, distance: 350, orbitSpeed: 0.0002 },
+            { name: "Saturn", size: 18, color: 0xffe5b4, distance: 450, orbitSpeed: 0.00015 },
+            { name: "Uran", size: 15, color: 0xaaffff, distance: 550, orbitSpeed: 0.00012 },
+            { name: "Neptun", size: 14, color: 0x3366ff, distance: 650, orbitSpeed: 0.0001 },
+            { name: "Pluton", size: 4, color: 0x808080, distance: 750, orbitSpeed: 0.00008 }
+         ];
+
+
+         const sunGeometry = new THREE.SphereGeometry(25, 64, 64);
+         const sunMaterial = new THREE.MeshBasicMaterial({ color: 0xffff00 });
+         const sun = new THREE.Mesh(sunGeometry, sunMaterial);
+         sun.position.z = -200;
+         scene.add(sun);
+
+
+         const moonGeometry = new THREE.SphereGeometry(3, 32, 32);
+         const moonMaterial = new THREE.MeshBasicMaterial({ color: 0xcccccc });
+         const moon = new THREE.Mesh(moonGeometry, moonMaterial);
+         moon.position.set(-150, 50, -300);
+         scene.add(moon);
+
+
+         planetData.forEach(p => {
+            const geometry = new THREE.SphereGeometry(p.size, 32, 32);
+            const material = new THREE.MeshPhongMaterial({ color: p.color });
+            const planet = new THREE.Mesh(geometry, material);
+            planet.position.z = -p.distance * 3;
+            planet.position.x = (Math.random() - 0.5) * 200;
+            planet.position.y = (Math.random() - 0.5) * 100;
+            planets.push(planet);
+            scene.add(planet);
+         });
+
+
+         const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+         scene.add(ambientLight);
+         const pointLight = new THREE.PointLight(0xffffff, 1, 1000);
+         pointLight.position.set(0, 0, -200);
+         scene.add(pointLight);
+
+
+         function createDragon() {
+            const dragon = new THREE.Group();
+            const bodyMaterial = new THREE.MeshPhongMaterial({ color: 0x8a2be2 });
+            const wingMaterial = new THREE.MeshPhongMaterial({ color: 0x4b0082, side: THREE.DoubleSide, transparent: true, opacity: 0.9 });
+
+            const body = new THREE.Mesh(new THREE.BoxGeometry(2, 2, 8), bodyMaterial);
+            dragon.add(body);
+
+            const wingShape = new THREE.Shape();
+            wingShape.moveTo(0, 0);
+            wingShape.bezierCurveTo(2, 5, 8, 3, 10, 0);
+            wingShape.bezierCurveTo(8, -2, 2, -2, 0, 0);
+            const wingGeometry = new THREE.ShapeGeometry(wingShape);
+            const wing1 = new THREE.Mesh(wingGeometry, wingMaterial);
+            const wing2 = new THREE.Mesh(wingGeometry, wingMaterial);
+            wing1.rotation.y = Math.PI / 2;
+            wing2.rotation.y = -Math.PI / 2;
+            wing1.position.set(1, 0, -2);
+            wing2.position.set(-1, 0, -2);
+            dragon.add(wing1);
+            dragon.add(wing2);
+
+            return dragon;
+         }
+
+         const dragon = createDragon();
+         scene.add(dragon);
+         dragon.position.set(0, 0, -500);
+
+
+         const flameParticles = [];
+         const flameMaterial = new THREE.PointsMaterial({
+            color: 0xff4500,
+            size: 2,
+            transparent: true,
+            blending: THREE.AdditiveBlending,
+            sizeAttenuation: true
+         });
+         const flameGeometry = new THREE.BufferGeometry();
+         const flameCount = 50;
+         const positions = new Float32Array(flameCount * 3);
+         flameGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+         const flamePoints = new THREE.Points(flameGeometry, flameMaterial);
+         scene.add(flamePoints);
+
+         camera.position.z = 0;
+
+         let isBreathingFire = false;
+         let burnEffectTimeout;
+
+         function startFireBreath() {
+            isBreathingFire = true;
+            const positions = flamePoints.geometry.attributes.position.array;
+            const dragonMouth = new THREE.Vector3(0, 0, -4).applyMatrix4(dragon.matrixWorld);
+            for (let i = 0; i < flameCount; i++) {
+               const x = (Math.random() - 0.5) * 50;
+               const y = (Math.random() - 0.5) * 50;
+               const z = Math.random() * 200;
+               positions[i * 3 + 0] = x;
+               positions[i * 3 + 1] = y;
+               positions[i * 3 + 2] = z;
+            }
+            flamePoints.geometry.attributes.position.needsUpdate = true;
+            flamePoints.position.copy(dragonMouth);
+
+            const textsToBurn = document.querySelectorAll('#dragon-title, #dragon-text, .profile-card h3, .profile-card p, .content-section h2, .content-section p, .content-section a');
+            textsToBurn.forEach(el => {
+               el.classList.add('burned-text');
+               el.classList.remove('text-unburn');
+            });
+
+            clearTimeout(burnEffectTimeout);
+            burnEffectTimeout = setTimeout(() => {
+               isBreathingFire = false;
+               flamePoints.geometry.attributes.position.needsUpdate = true;
+               textsToBurn.forEach(el => {
+                  el.classList.remove('burned-text');
+                  el.classList.add('text-unburn');
+               });
+            }, 1000);
+         }
+
+         setInterval(startFireBreath, 10000);
+
+         function animate() {
+            requestAnimationFrame(animate);
+
+
+            rings.forEach(ring => {
+               ring.rotation.x += 0.0002;
+               ring.rotation.y += 0.0003;
+               ring.rotation.z += 0.0001;
+            });
+
+
+            stars.rotation.y += 0.00005;
+            stars.rotation.x += 0.00005;
+
+
+            const dragonTime = performance.now() * 0.0005;
+            const dragonX = Math.sin(dragonTime * 2) * 200;
+            const dragonY = Math.cos(dragonTime * 1.5) * 150;
+            const dragonZ = -500 + Math.sin(dragonTime) * 100;
+            dragon.position.set(dragonX, dragonY, dragonZ);
+            dragon.rotation.y = Math.atan2(dragonX, dragonZ);
+
+
+            if (isBreathingFire) {
+               const positions = flamePoints.geometry.attributes.position.array;
+               for (let i = 0; i < flameCount; i++) {
+                  positions[i * 3 + 2] += 2;
+               }
+               flamePoints.geometry.attributes.position.needsUpdate = true;
+            }
+
+
+            if (isSolarSystemMode) {
+               planets.forEach((p, index) => {
+                  const planetOrbit = planetData[index];
+                  const angle = performance.now() * planetOrbit.orbitSpeed;
+                  p.position.x = planetOrbit.distance * Math.cos(angle);
+                  p.position.z = -200 + planetOrbit.distance * Math.sin(angle);
+                  p.position.y = 0;
+                  p.rotation.y += 0.002;
+               });
+               sun.rotation.y += 0.0005;
+               moon.rotation.y += 0.001;
+            } else {
+               flightProgress += FLIGHT_SPEED;
+               camera.position.z = -1500 * flightProgress;
+            }
+
+            renderer.render(scene, camera);
+         }
+
+         function onWindowResize() {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+         }
+         window.addEventListener('resize', onWindowResize);
+
+
+         const solarSystemSection = document.getElementById('solar-system');
+         const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.2
+         };
+
+         const solarSystemObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+               isSolarSystemMode = entry.isIntersecting;
+            });
+         }, observerOptions);
+
+         solarSystemObserver.observe(solarSystemSection);
+
+
+         const contentObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+               if (entry.isIntersecting) {
+                  entry.target.style.opacity = '1';
+                  entry.target.style.transform = 'translateY(0)';
+                  observer.unobserve(entry.target);
+               }
+            });
+         }, observerOptions);
+
+         document.querySelectorAll('.fade-in').forEach(el => {
+            el.style.transform = 'translateY(50px)';
+            contentObserver.observe(el);
+         });
+
+         animate();
+      };
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box
+}
+
+body {
+   font-family: 'Inter', sans-serif;
+   background-color: #0c0d12;
+   color: #e0e7ff;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+}
+
+#bg-canvas {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 0.8;
+}
+
+.content-section {
+   position: relative;
+   z-index: 10;
+}
+
+/* Qismlar uchun animatsiya */
+.fade-in {
+   animation: fadeIn 1.2s ease-out forwards;
+   opacity: 0;
+}
+
+@keyframes fadeIn {
+   to {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}
+
+/* Profil rasmlari uchun hover effekti */
+.profile-card {
+   position: relative;
+   transform-style: preserve-3d;
+   transform: perspective(1000px);
+   transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+   background-color: rgba(255, 255, 255, 0.05);
+   backdrop-filter: blur(10px);
+   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.profile-card:hover {
+   transform: perspective(1000px) scale(1.05) translateY(-10px);
+   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.profile-card .overlay {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.7);
+   opacity: 0;
+   transition: opacity 0.5s ease;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.profile-card:hover .overlay {
+   opacity: 1;
+}
+
+/* Ajdaho alovi effekti */
+.burned-text {
+   color: #3d1406 !important;
+   filter: blur(1px) drop-shadow(0 0 5px #ff5500);
+   transition: all 0.5s ease-out;
+   animation: burnFade 1s forwards;
+}
+
+@keyframes burnFade {
+   0% {
+      filter: blur(2px) drop-shadow(0 0 10px #ff0000);
+   }
+
+   100% {
+      filter: blur(0) drop-shadow(0 0 0 transparent);
+   }
+}
+
+.text-unburn {
+   transition: color 2s ease, filter 2s ease;
+}
