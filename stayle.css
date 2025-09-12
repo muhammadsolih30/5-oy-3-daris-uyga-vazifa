@@ -1,0 +1,469 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: beige;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9019607843);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+header .container {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 30px;
+}
+header .container .header {
+  width: 100%;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .container .header .logo img:nth-child(1) {
+  width: 39px;
+  height: 32px;
+}
+header .container .header .logo img:nth-child(2) {
+  width: 100.38px;
+  height: 10.1px;
+}
+header .container .header .bottonis {
+  border-radius: 5px;
+  cursor: pointer;
+  width: 140px;
+  height: 40px;
+  background-color: #70c05b;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  transition: 0.2s ease;
+}
+header .container .header .bottonis img {
+  width: 24px;
+  height: 24px;
+}
+header .container .header .bottonis .taxt_btn {
+  font-size: 16px;
+  transition: 0.2s ease;
+}
+header .container .header .bottonis:hover {
+  transform: translateY(-2px);
+}
+header .container .header .bottonis:hover .taxt_btn {
+  transform: scale(1.2);
+}
+header .container .header .name .malumot_kirit {
+  width: 372px;
+  height: 40px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+header .container .header .text_shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.2s all ease;
+  cursor: pointer;
+}
+header .container .header .text_shop img {
+  margin-bottom: 7px;
+  transition: 0.2s all ease;
+}
+header .container .header .text_shop .text_magazin {
+  font-size: 12px;
+  color: #414141;
+  transition: 0.2s all ease;
+}
+header .container .header .text_shop:hover img {
+  transform: translateY(-2px) scale(1.2);
+}
+header .container .header .text_shop:hover .text_magazin {
+  transform: scale(1.2);
+  color: black;
+}
+header .container .header .main {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  cursor: pointer;
+}
+header .container .header .main img {
+  width: 40px;
+  height: 40px;
+  transition: 0.2s ease;
+}
+header .container .header .main .text_header_img {
+  font-size: 16px;
+  transition: 0.2s ease;
+}
+header .container .header .main:hover img {
+  transform: scale(1.3);
+}
+header .container .header .main:hover .text_header_img {
+  transform: scale(1.2);
+}
+header .container .header .bootom_to {
+  cursor: pointer;
+}
+header .container .header .bootom_to .to_img {
+  width: 24px;
+  height: 24px;
+}
+
+.section {
+  margin-bottom: 60px;
+  margin-top: 120px;
+}
+.section h1 {
+  font-size: 36px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.section .main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+}
+.section .main .child {
+  background-color: white;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  font-size: 18px;
+}
+.section .main .child .img_bir {
+  flex: 1;
+  font-size: 18px;
+  overflow: hidden;
+}
+.section .main .child .img_bir img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.5s;
+}
+.section .main .child .img_bir img:hover {
+  transform: scale(1.1);
+}
+.section .main .child .text_img_bor {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+.section .main .child .text_img_bor .narxi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section .main .child .text_img_bor .narxi .ali h1 {
+  font-size: 18px;
+}
+.section .main .child .text_img_bor .narxi .ali h1 .ali .ali002 {
+  font-size: 12px;
+  color: #bfbfbf;
+}
+.section .main .child .text_img_bor .narxi .vali .vali001 {
+  font-size: 16px;
+}
+.section .main .child .text_img_bor .narxi .vali .vali002 {
+  font-size: 12px;
+  color: #bfbfbf;
+}
+.section .main .child .text_img_bor .birinchi_btn_01 {
+  width: 100%;
+  height: 40px;
+  border: 2px solid #70c05b;
+  color: #70c05b;
+  border-radius: 4px;
+  font-size: 16px;
+  background: transparent;
+  transition: 0.3s;
+}
+.section .main .child .text_img_bor .birinchi_btn_01:hover {
+  background-color: #ff6633;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.bolim {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  width: 656px;
+  height: 40px;
+}
+.bolim img {
+  width: 24px;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+.bolim p {
+  font-size: 24px;
+  transition: 0.1s;
+}
+.bolim p:hover {
+  transform: scale(1.4) translateY(-3px);
+  cursor: pointer;
+  color: red;
+}
+.bolim img:nth-child(1):hover {
+  transform: translateX(-3px) scale(1.1);
+}
+.bolim img:nth-child(2):hover {
+  transform: translateX(-3px) scale(1.1);
+}
+.bolim .img_ut:hover {
+  transform: translateX(3px) scale(1.1);
+}
+
+footer {
+  width: 100%;
+  height: 126px;
+  background-image: url("./image/footer.svg");
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+footer .bosh {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+footer .bosh img {
+  width: 64px;
+  height: 64px;
+}
+footer .bosh .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+  cursor: pointer;
+}
+footer .bosh .text p {
+  font-size: 14px;
+  color: #414141;
+  transition: 0.2s ease;
+}
+footer .bosh .text p:hover {
+  transform: scale(1.3);
+}
+footer .tugadi {
+  display: flex;
+  align-items: center;
+  gap: 160px;
+}
+footer .tugadi .rasimlar {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  gap: 25px;
+}
+footer .tugadi .tel {
+  display: flex;
+  align-items: center;
+}
+footer .tugadi .tel img {
+  width: 24px;
+}
+footer .tugadi .tel p {
+  font-size: 20px;
+}
+
+/* === RESPONSIVE QO‘SHIMCHA === */
+/* 1200px dan kichik ekranda */
+@media (max-width: 1200px) {
+  .section .main {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+}
+/* 992px dan kichik ekranda */
+@media (max-width: 992px) {
+  header .container .header {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 15px;
+  }
+  header .container .header .name .malumot_kirit {
+    width: 100%;
+  }
+  .section .main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+  }
+  .bolim {
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+  }
+  footer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+  footer .bosh {
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer .tugadi {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 576px) {
+  header .container .header {
+    overflow: auto;
+    z-index: 100;
+    align-items: flex-start;
+    gap: 12px;
+    background-color: #ffffff;
+  }
+  header .container .header .logo {
+    justify-content: center;
+    width: 100%;
+  }
+  header .container .header .bottonis {
+    width: 100%;
+    justify-content: center;
+  }
+  header .container .header .name {
+    width: 100%;
+  }
+  header .container .header .name .malumot_kirit {
+    width: 100%;
+  }
+  .section h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .section .main {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .bolim {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+  .bolim p {
+    font-size: 20px;
+  }
+  footer .bosh {
+    gap: 15px;
+  }
+  footer .bosh .text {
+    flex-direction: column;
+    gap: 12px;
+  }
+  footer .tugadi {
+    gap: 25px;
+  }
+  footer .tugadi .rasimlar {
+    gap: 15px;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    padding: 0 5px;
+  }
+  header .header {
+    gap: 8px;
+    min-height: 56px;
+  }
+  .logo img:nth-child(1) {
+    width: 28px;
+    height: 24px;
+  }
+  .logo img:nth-child(2) {
+    width: 60px;
+    height: 8px;
+  }
+  .bottonis {
+    width: 100px;
+    height: 32px;
+    font-size: 12px;
+  }
+  .name .malumot_kirit {
+    font-size: 14px;
+    height: 32px;
+    padding-left: 8px;
+  }
+  .main img {
+    width: 24px;
+    height: 24px;
+  }
+  .text_header_img {
+    font-size: 12px;
+  }
+  .section h1 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .child {
+    font-size: 14px;
+  }
+  .child .text_img_bor {
+    padding: 5px;
+    gap: 5px;
+  }
+  .birinchi_btn_01 {
+    font-size: 12px;
+    height: 28px;
+  }
+  .bolim {
+    gap: 5px;
+  }
+  .bolim p {
+    font-size: 14px;
+  }
+  .bolim img {
+    width: 16px;
+  }
+  footer {
+    padding: 8px;
+    gap: 8px;
+  }
+  footer img,
+  footer .bosh img {
+    width: 32px;
+    height: 32px;
+  }
+  footer p,
+  footer .tel p {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=stayle.css.map */

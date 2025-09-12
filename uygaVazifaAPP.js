@@ -14,8 +14,8 @@
 // ]);
 // console.log(obj.deleteMany('a', 'c')); 
 
-
 //! 2 - masala
+
 // function mapSum(map) {
 //   let sum = 0;
 //   for (let value of map.values()) {
