@@ -1,0 +1,687 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9019607843);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+header .container .header {
+  width: 100%;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container .header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .container .header .logo img:nth-child(1) {
+  width: 39px;
+  height: 32px;
+}
+
+header .container .header .logo img:nth-child(2) {
+  width: 100.38px;
+  height: 10.1px;
+}
+
+header .container .header .bottonis {
+  border-radius: 5px;
+  cursor: pointer;
+  width: 140px;
+  height: 40px;
+  background-color: #70c05b;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  transition: 0.2s ease;
+}
+
+header .container .header .bottonis img {
+  width: 24px;
+  height: 24px;
+}
+
+header .container .header .bottonis .taxt_btn {
+  font-size: 16px;
+  transition: 0.2s ease;
+}
+
+header .container .header .bottonis:hover {
+  transform: translateY(-2px);
+}
+
+header .container .header .bottonis:hover .taxt_btn {
+  transform: scale(1.2);
+}
+
+header .container .header .name .malumot_kirit {
+  width: 372px;
+  height: 40px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+header .container .header .text_shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.2s all ease;
+  cursor: pointer;
+}
+
+header .container .header .text_shop img {
+  margin-bottom: 7px;
+  transition: 0.2s all ease;
+}
+
+header .container .header .text_shop .text_magazin {
+  font-size: 12px;
+  color: #414141;
+  transition: 0.2s all ease;
+}
+
+header .container .header .text_shop:hover img {
+  transform: translateY(-2px) scale(1.2);
+}
+
+header .container .header .text_shop:hover .text_magazin {
+  transform: scale(1.2);
+  color: black;
+}
+
+header .container .header .main {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  cursor: pointer;
+}
+
+header .container .header .main img {
+  width: 40px;
+  height: 40px;
+  transition: 0.2s ease;
+}
+
+header .container .header .main .text_header_img {
+  font-size: 16px;
+  transition: 0.2s ease;
+}
+
+header .container .header .main:hover img {
+  transform: scale(1.3);
+}
+
+header .container .header .main:hover .text_header_img {
+  transform: scale(1.2);
+}
+
+header .container .header .bootom_to {
+  cursor: pointer;
+}
+
+header .container .header .bootom_to .to_img {
+  width: 24px;
+  height: 24px;
+}
+
+/* ====== Asosiy bloklar ====== */
+main .contagoris {
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  margin: 35px 0;
+}
+
+main .contagoris .ali {
+  color: #8F8F8F;
+}
+
+main .contagoris img {
+  width: 24px;
+  height: 24px;
+}
+
+main h1 {
+  font-size: 64px;
+  margin-bottom: 10px;
+}
+
+/* ====== Grid ====== */
+.maniqsm {
+  display: grid;
+  width: 100%;
+  height: auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin: auto;
+}
+
+/* ====== Har bir element ====== */
+.maniqsm .child {
+  position: relative;
+  z-index: 0; /* gradient bilan qatlam hosil qiladi */
+  font-size: 20px;
+  font-family: Roboto, sans-serif;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 220px;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* Gradient */
+.maniqsm .child::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(
+    to top,
+    rgba(7, 255, 7, 0.6),
+    rgba(1, 104, 1, 0)
+  );
+  z-index: 0; /* gradient pastda turadi */
+}
+
+/* Matn */
+.maniqsm .child .nomsiz {
+  position: relative;
+  z-index: 1; /* gradientdan yuqorida */
+  padding: 0 10px 10px 10px;
+  box-sizing: border-box;
+}
+
+.maniqsm .child .nomsiz p {
+  margin: 0;
+  white-space: normal; /* so‘zlar qatordan chiqsin */
+}
+
+/* ====== Fon rasmlar ====== */
+.maniqsm .child:nth-child(1) {
+  grid-column: 1 / 3;
+  background-image: url("../mainrasimlar/img.svg");
+}
+.maniqsm .child:nth-child(2) {
+  background-image: url("../mainrasimlar/img (1).svg");
+}
+.maniqsm .child:nth-child(3) {
+  background-image: url("../mainrasimlar/img (2).svg");
+}
+.maniqsm .child:nth-child(4) {
+  background-image: url("../mainrasimlar/img (3).svg");
+}
+.maniqsm .child:nth-child(5) {
+  background-image: url("../mainrasimlar/img (4).svg");
+}
+.maniqsm .child:nth-child(6) {
+  background-image: url("../mainrasimlar/img (5).svg");
+}
+.maniqsm .child:nth-child(7) {
+  background-image: url("../mainrasimlar/img (6).svg");
+}
+.maniqsm .child:nth-child(8) {
+  background-image: url("../mainrasimlar/img (7).svg");
+}
+.maniqsm .child:nth-child(9) {
+  background-image: url("../mainrasimlar/img (8).svg");
+}
+.maniqsm .child:nth-child(10) {
+  grid-column: 3 / 5;
+  background-image: url("../mainrasimlar/img (9).svg");
+}
+.maniqsm .child:nth-child(11) {
+  background-image: url("../mainrasimlar/img (10).svg");
+}
+.maniqsm .child:nth-child(12) {
+  grid-column: 2 / 4;
+  background-image: url("../mainrasimlar/img (11).svg");
+}
+.maniqsm .child:nth-child(13) {
+  background-image: url("../mainrasimlar/img (12).svg");
+}
+
+/* ====== RESPONSIV QISMI ====== */
+
+/* Planshetlar (≤1024px) */
+@media (max-width: 1024px) {
+  .maniqsm {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .maniqsm .child {
+    min-height: 200px;
+    font-size: clamp(14px, 2vw, 18px);
+  }
+
+  main h1 {
+    font-size: clamp(32px, 4vw, 48px);
+  }
+
+  main .contagoris {
+    width: 100%;
+    padding: 0 15px;
+    font-size: 13px;
+  }
+}
+
+/* Telefonlar (≤600px) */
+@media (max-width: 600px) {
+  .maniqsm {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .maniqsm .child {
+    min-height: 180px;
+    font-size: 14px;
+  }
+
+  main h1 {
+    font-size: clamp(22px, 6vw, 34px);
+    text-align: center;
+  }
+
+  main .contagoris {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    gap: 10px;
+    font-size: 12px;
+  }
+
+  main .contagoris img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+
+
+
+
+footer {
+  width: 100%;
+  height: 126px;
+  background-image: url("./image/footer.svg");
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .bosh {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+footer .bosh img {
+  width: 64px;
+  height: 64px;
+}
+
+footer .bosh .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+  cursor: pointer;
+}
+
+footer .bosh .text p {
+  font-size: 14px;
+  color: #414141;
+  transition: 0.2s ease;
+}
+
+footer .bosh .text p:hover {
+  transform: scale(1.3);
+}
+
+footer .tugadi {
+  display: flex;
+  align-items: center;
+  gap: 160px;
+}
+
+footer .tugadi .rasimlar {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  gap: 25px;
+}
+
+footer .tugadi .tel {
+  display: flex;
+  align-items: center;
+}
+
+footer .tugadi .tel img {
+  width: 24px;
+}
+
+footer .tugadi .tel p {
+  font-size: 20px;
+}
+
+/* === RESPONSIVE QO‘SHIMCHA === */
+/* 1200px dan kichik ekranda */
+@media (max-width: 1200px) {
+  .section .main {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+
+  footer .tugadi .tel {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 1110px) {
+  footer .tugadi .bosh .text p {
+    font-size: 12px;
+  }
+
+  footer .tugadi .tel {
+    gap: 10px;
+  }
+
+  footer .tugadi .tel .rasimlar img {
+    width: 20px;
+  }
+
+  footer .tugadi .tel img {
+    width: 20px;
+    height: 20px;
+  }
+
+  footer .tugadi .tel p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 630px) {
+  footer {
+    overflow: hidden;
+    margin: auto;
+  }
+
+  footer .tugadi .bosh .text {
+    max-width: 630px;
+    width: 100%;
+  }
+
+  footer .tugadi .bosh .text p {
+    font-size: 12px;
+  }
+
+  footer .tugadi .tel {
+    gap: 10px;
+  }
+
+  footer .tugadi .tel .rasimlar {
+    margin: auto;
+  }
+
+  footer .tugadi .tel .rasimlar img {
+    width: 18px;
+    height: 18px;
+  }
+
+  footer .tugadi .tel img {
+    width: 20px;
+    height: 20px;
+  }
+
+  footer .tugadi .tel p {
+    font-size: 12px;
+  }
+}
+
+/* 992px dan kichik ekranda */
+@media (max-width: 992px) {
+  header .container .header {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 15px;
+  }
+
+  header .container .header .name .malumot_kirit {
+    width: 100%;
+  }
+
+  .section .main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+  }
+
+  .bolim {
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  footer .bosh {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  footer .tugadi {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 632px) {
+  .section {
+    margin-top: 170px;
+  }
+}
+
+@media (max-width: 576px) {
+  header .container .header {
+    overflow: auto;
+    z-index: 100;
+    align-items: flex-start;
+    gap: 12px;
+    background-color: #ffffff;
+  }
+
+  header .container .header .logo {
+    justify-content: center;
+    width: 100%;
+  }
+
+  header .container .header .bottonis {
+    width: 100%;
+    justify-content: center;
+  }
+
+  header .container .header .name {
+    width: 100%;
+  }
+
+  header .container .header .name .malumot_kirit {
+    width: 100%;
+  }
+
+  .section {
+    margin-top: 210px;
+  }
+
+  .section h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .section .main {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  .bolim {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .bolim p {
+    font-size: 20px;
+  }
+
+  footer .bosh {
+    gap: 15px;
+  }
+
+  footer .bosh .text {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  footer .tugadi {
+    gap: 25px;
+  }
+
+  footer .tugadi .rasimlar {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 406px) {
+  .section {
+    margin-top: 260px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 0 5px;
+  }
+
+  header .header {
+    gap: 8px;
+    min-height: 56px;
+  }
+
+  .logo img:nth-child(1) {
+    width: 28px;
+    height: 24px;
+  }
+
+  .logo img:nth-child(2) {
+    width: 60px;
+    height: 8px;
+  }
+
+  .bottonis {
+    width: 100px;
+    height: 32px;
+    font-size: 12px;
+  }
+
+  .name .malumot_kirit {
+    font-size: 14px;
+    height: 32px;
+    padding-left: 8px;
+  }
+
+  .main img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .text_header_img {
+    font-size: 12px;
+  }
+
+  .section h1 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .child {
+    font-size: 14px;
+  }
+
+  .child .text_img_bor {
+    padding: 5px;
+    gap: 5px;
+  }
+
+  .birinchi_btn_01 {
+    font-size: 12px;
+    height: 28px;
+  }
+
+  .bolim {
+    gap: 5px;
+  }
+
+  .bolim p {
+    font-size: 14px;
+  }
+
+  .bolim img {
+    width: 16px;
+  }
+
+  footer {
+    padding: 8px;
+    gap: 8px;
+  }
+
+  footer img,
+  footer .bosh img {
+    width: 32px;
+    height: 32px;
+  }
+
+  footer p,
+  footer .tel p {
+    font-size: 10px;
+  }
+
+
+
+
+
+  /*# sourceMappingURL=stayle.css.map */
